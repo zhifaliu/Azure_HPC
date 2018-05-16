@@ -203,7 +203,7 @@
       "CentOS_7.3": {
         "os": "linux"
       },
-      "CentOS-HPC_7.1": {
+      "CentOS-HPC_7.4": {
         "os": "linux"
       },
       "SLES12-HPC": {
@@ -229,10 +229,10 @@
         "sku": "6.7",
         "version": "latest"
       },
-      "CentOS-HPC_7.1": {
+      "CentOS-HPC_7.4": {
         "publisher": "OpenLogic",
         "offer": "CentOS-HPC",
-        "sku": "7.1",
+        "sku": "7.4",
         "version": "latest"
       },
       "CentOS_7.2": {
