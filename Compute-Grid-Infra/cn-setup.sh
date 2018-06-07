@@ -196,6 +196,15 @@ elif [ "$SHARED_STORAGE" == "nfsonmaster" ]; then
 	mount_nfs
 fi
 
+
+# Set ulimits
+cat >>/etc/security/limits.conf << EOF
+
+*	hard	stack	unlimited
+*	soft	stack	unlimited
+
+EOF
+
 setup_intel_mpi
 #install_blobxfer
 
