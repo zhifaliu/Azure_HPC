@@ -55,9 +55,9 @@ install_pbspro()
 	yum install -y libXt-devel libXext
 
 
-    wget -O /mnt/CentOS_7.zip  http://wpc.23a7.iotacdn.net/8023A7/origin2/rl/PBS-Open/CentOS_7.zip
-    unzip /mnt/CentOS_7.zip -d /mnt
-       
+    #wget -O /mnt/CentOS_7.zip  http://wpc.23a7.iotacdn.net/8023A7/origin2/rl/PBS-Open/CentOS_7.zip
+    #unzip /mnt/CentOS_7.zip -d /mnt
+    wget -O /mnt/CentOS_7/pbspro-server-14.1.0-13.1.x86_64.rpm https://github.com/zhifaliu/Azure_HPC/blob/master/Compute-Grid-Infra/PBSPro/pbspro-execution-14.1.0-13.1.x86_64.rpm   
     if is_master; then
 
 		enable_kernel_update
@@ -102,7 +102,7 @@ EOF
 
 		yum install -y hwloc-devel expat-devel tcl-devel expat
 
-
+            wget -O https://github.com/zhifaliu/Azure_HPC/blob/master/Compute-Grid-Infra/PBSPro/pbspro-execution-14.1.0-13.1.x86_64.rpm
 	    rpm -ivh --nodeps /mnt/CentOS_7/pbspro-execution-14.1.0-13.1.x86_64.rpm
 
         cat > /etc/pbs.conf << EOF
