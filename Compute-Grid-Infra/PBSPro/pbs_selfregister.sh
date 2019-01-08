@@ -2,9 +2,9 @@
 # chkconfig: 345 99 10
 # description: auto start pbs_selfregister
 #
-PBS_MANAGER=hpcuser
+PBS_MANAGER=hpc
 nodename=`hostname`
-echo nodename
+echo $nodename
 qname=workq
 
 case "$1" in
