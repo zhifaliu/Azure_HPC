@@ -4,6 +4,7 @@
 #
 PBS_MANAGER=hpcuser
 nodename=`hostname`
+echo nodename
 qname=workq
 
 case "$1" in
